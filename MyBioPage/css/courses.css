@@ -1,0 +1,73 @@
+* {
+    margin:0px;
+    padding:0px;
+    position:relative;
+}
+html, body {
+    height:100vh;
+    width:100vw;
+
+}
+.main-container-grid {
+    display:grid;
+    grid-template-rows:1fr 13fr 1fr;
+    grid-row-gap: 1em;
+}
+.logo-name {
+    line-height:50px;
+    margin-left:10px;
+}
+.left-nav {
+
+}
+.left-nav > li {
+    border:1px solid #f1f1f1;
+}
+.left-nav > li > a {
+    display:block;
+    padding:15px 10px;
+}
+.r1 {
+    background-color:#ccc;
+}
+.r2 {
+    background-color:#f1f1f1;
+}
+.r3 {
+    background-color:#ccc;
+}
+.r1 , .r2 , .r3 {
+    display:grid;
+    grid-template-columns:1fr 5fr 2fr;
+    grid-row-gap:1em;
+}
+.r2c1, .r2c3 {
+    background-color:#CCC;
+}
+td {
+    padding:10px;
+}
+.courses-table {
+    table-layout:fixed;
+    width:100%;
+}
+.courses-table > thead > tr {
+    height:50px;
+    text-align:center;
+}
+.courses-table > tbody > tr {
+    height:28px;
+}
+.courses-table > tbody > tr > td {
+    border:1px solid rgb(179, 179, 223);
+}
+.courses-table > thead > tr > td {
+    border:1px solid #aaa;
+    font-weight:solid;
+    font-size: 18px;
+    background-color:rgb(98, 150, 98);
+}
+.copyright {
+    align-self:center;
+    justify-self:center;
+}

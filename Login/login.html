@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            * {
+                margin:0px;
+                padding:0px;
+                position:relative;
+            }
+            html, body {
+                height:100vh;
+                width:100vw;
+            }
+
+            .r1 {
+                
+
+            }
+            .r2 {
+                display:grid;
+            }
+            .r1, .r3 {
+                background-color:#ccc;
+                display:grid;
+                grid-template-columns: 1fr 5fr 1fr;
+                grid-column-gap: 1em;
+            }
+            .login-form {
+                justify-self:center;
+                align-self:center;
+                width:500px;
+                height:500px;
+                display:grid;
+                grid-template-rows:5fr 1fr 1fr 1fr;
+                grid-row-gap:15px;
+            }
+            .login-form > img {
+                width:80%;
+                height:90%;
+                text-align:center;
+            }
+            .login-container-grid {
+                display:grid;
+                grid-template-rows:1fr 13fr 1fr;
+            }
+            .login-logo {
+                height:200px;
+            }
+            .login-name {
+                margin-left:50px;
+                line-height:20px;
+                align-self:center;
+            }
+            .btn-login {
+                width:100px;
+                justify-self:right;
+            }
+            .login-input {
+                padding:10px;
+                font-size:15px;
+            }
+        </style>
+    </head>
+    <body class="login-container-grid">
+        <div class="r1">
+            <h2 class="login-name">Zhihong Liang</h2>
+        </div>
+        <div class="r2">
+            <form class="login-form">
+                <img clas="login-logo" src="./login picture.jpg" alt="logo">
+                <input type="text" class="login-input" placeholder="Username">
+                <input type="password" class="login-input" placeholder="Password">
+                <button type="submit" class="btn-login">Login</button>
+
+            </form>
+        </div>
+        <div class="r3">
+            r3
+        </div>
+    </body>
+</html>

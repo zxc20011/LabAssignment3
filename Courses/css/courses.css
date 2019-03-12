@@ -8,6 +8,12 @@ html, body {
     width:100vw;
 
 }
+.sub-heading, .nav-heading {
+    margin:10px 0px 15px;
+}
+.nav-heading {
+    text-align:center;
+}
 .main-container-grid {
     display:grid;
     grid-template-rows:1fr 13fr 1fr;
@@ -18,7 +24,7 @@ html, body {
     margin-left:10px;
 }
 .left-nav {
-
+    list-style-type:none;
 }
 .left-nav > li {
     border:1px solid #f1f1f1;
@@ -26,12 +32,20 @@ html, body {
 .left-nav > li > a {
     display:block;
     padding:15px 10px;
+    text-decoration:none;
+    transition-duration:0.7s;
+    font-weight:bold;
+}
+.left-nav > li > a:hover {
+    background-color:rgb(124, 124, 153);
 }
 .r1 {
     background-color:#ccc;
 }
 .r2 {
     background-color:#f1f1f1;
+    width:90%;
+    margin:0px auto;
 }
 .r3 {
     background-color:#ccc;
@@ -43,6 +57,9 @@ html, body {
 }
 .r2c1, .r2c3 {
     background-color:#CCC;
+}
+.r2c3 {
+    padding:0px 15px 10px;
 }
 td {
     padding:10px;
